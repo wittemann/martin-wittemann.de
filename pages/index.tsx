@@ -7,7 +7,7 @@ const font = Silkscreen({ subsets: ['latin'], weight: '400' });
 const intro =
   "I'm Martin Wittemann – Frontend developer, gamer and proud father.";
 
-const subIntor = 'I have a lot of experien, you guessed it.';
+const subIntor = 'I have a lot of experien, you guessed it...';
 
 const links = [
   {
