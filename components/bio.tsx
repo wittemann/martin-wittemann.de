@@ -3,6 +3,7 @@ import { Silkscreen } from 'next/font/google';
 
 const fontHeadline = Silkscreen({ subsets: ['latin'], weight: '700' });
 
+const shortInfoText = 'Senior Frontend Engineer';
 const links = [
   {
     title: 'LinkedIn',
@@ -27,8 +28,6 @@ const links = [
   { title: 'Email', href: 'mailto:martin@wittemann-mail.de' },
 ];
 
-const shortInfoText = 'Frontend Developer bla bla...';
-
 export default function Bio({
   className,
 }: React.HTMLAttributes<HTMLDivElement>) {
@@ -43,11 +42,15 @@ export default function Bio({
       />
       <h3 className={`${fontHeadline.className}`}>Martin Wittemann</h3>
       <p className="text-xs">{shortInfoText}</p>
-      <ul className="text-xs text-primary underline mt-2">
+      <ul className="text-xs text-primary mt-2 hover:text-prim">
         {links.map((data) => {
           return (
             <li key={data.title}>
-              <a href={data.href} target={data.target}>
+              <a
+                href={data.href}
+                target={data.target}
+                className="hover:underline-offset-4 underline"
+              >
                 {data.title}
               </a>
             </li>

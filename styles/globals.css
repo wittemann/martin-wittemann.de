@@ -7,6 +7,7 @@
     --text-color: 22, 16, 26;
     --background-color: #e8e8e8;
     --color-primary: 233, 7, 7;
+    --link-color-hover: 129, 103, 41;
   }
 
   @media (prefers-color-scheme: dark) {
@@ -14,6 +15,7 @@
       --text-color: 237, 208, 198;
       --background-color: #401d19;
       --color-primary: 255, 104, 44;
+      --link-color-hover: 129, 103, 41;
     }
   }
 
@@ -24,5 +26,9 @@
   body {
     color: rgb(var(--text-color));
     background-color: var(--background-color);
+  }
+
+  a:hover {
+    color: rgb(var(--link-color-hover));
   }
 }
