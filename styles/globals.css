@@ -12,10 +12,10 @@
 
   @media (prefers-color-scheme: dark) {
     :root {
-      --text-color: 237, 208, 198;
-      --background-color: #401d19;
-      --color-primary: 255, 104, 44;
-      --link-color-hover: 129, 103, 41;
+      --text-color: 214, 213, 168;
+      --background-color: #1b2430;
+      --color-primary: 129, 103, 151;
+      --link-color-hover: 81, 85, 126;
     }
   }
 
@@ -26,6 +26,15 @@
   body {
     color: rgb(var(--text-color));
     background-color: var(--background-color);
+    padding-bottom: 200px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    color: rgb(var(--color-primary));
   }
 
   a:hover {

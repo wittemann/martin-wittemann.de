@@ -45,7 +45,7 @@ export default function Bio({
       <ul className="text-xs text-primary mt-2 hover:text-prim">
         {links.map((data) => {
           return (
-            <li key={data.title}>
+            <li key={data.title} className="list-inside list-disc">
               <a
                 href={data.href}
                 target={data.target}
