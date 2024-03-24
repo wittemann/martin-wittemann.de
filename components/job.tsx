@@ -1,4 +1,13 @@
-export default function Job({ data }) {
+type Job = {
+  title: string;
+  company: string;
+  date: string;
+  description: string;
+  details: string[];
+  tags: string[];
+};
+
+export default function Job({ data }: { data: Job }) {
   return (
     <>
       <p className={'font-extrabold pt-4'}>
