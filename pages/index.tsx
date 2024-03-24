@@ -3,6 +3,7 @@ import Experience from '@/components/experience';
 import About from '@/components/about';
 import Projects from '@/components/projects';
 import { Sarabun } from 'next/font/google';
+import Footer from '@/components/footer';
 
 const font = Sarabun({ subsets: ['latin'], weight: ['100', '700'] });
 
@@ -16,6 +17,7 @@ export default function Home() {
         <About></About>
         <Experience></Experience>
         <Projects></Projects>
+        <Footer></Footer>
       </main>
     </div>
   );
