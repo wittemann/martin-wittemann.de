@@ -1,0 +1,52 @@
+{
+  "current": {
+    "title": "Senior Frontend Engineer",
+    "company": "1&1 MAIL & MEDIA",
+    "date": "March 2024 until now",
+    "description": "TBD",
+    "details": ["detail 1", "detail 2"],
+    "tags": ["TypeScript", "StencilJS", "Redux", "Architecture"]
+  },
+  "archive": [
+    {
+      "title": "Chapter Lead - Frontend Development",
+      "company": "1&1 MAIL & MEDIA",
+      "date": "August 2018 until February 2024",
+      "description": "Leader of a frontend chapter in an Spotify agile like environment including staff responsibility for up to 13 Frontend Developer. Address and solve problems the squads can’t solve by themself and supporting employees in their career growth.",
+      "details": [],
+      "tags": ["Leading", "TypeScript", "StencilJS", "Redux", "Architecture"]
+    },
+    {
+      "title": "Head of Frontend Development",
+      "company": "1&1 MAIL & MEDIA",
+      "date": "May 2015 until July 2018",
+      "description": "TBD",
+      "details": [],
+      "tags": ["Leading", "TypeScript", "Angular"]
+    },
+    {
+      "title": "Head of Frameworks & Tooling",
+      "company": "1&1",
+      "date": "May 2011 until Aprila 2015",
+      "description": "TBD",
+      "details": [],
+      "tags": ["Leading", "JavaScript", "OpenSource"]
+    },
+    {
+      "title": "Framework Architect",
+      "company": "1&1",
+      "date": "May 2011 until April 2011",
+      "description": "TBD",
+      "details": [],
+      "tags": ["TBD"]
+    },
+    {
+      "title": "Frontend Developer",
+      "company": "1&1",
+      "date": "April 2009 until April 2010",
+      "description": "TBD",
+      "details": [],
+      "tags": ["TBD"]
+    }
+  ]
+}
