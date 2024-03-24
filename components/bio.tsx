@@ -1,32 +1,8 @@
 import Image from 'next/image';
 import { Silkscreen } from 'next/font/google';
+import links from '@/data/links.json';
 
 const fontHeadline = Silkscreen({ subsets: ['latin'], weight: '700' });
-
-const shortInfoText = 'Senior Frontend Engineer';
-const links = [
-  {
-    title: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/martin-wittemann',
-    target: '_blank',
-  },
-  {
-    title: 'Github',
-    href: 'https://github.com/wittemann',
-    target: '_blank',
-  },
-  {
-    title: 'Pluralsight',
-    href: 'https://app.pluralsight.com/profile/martin-wittemann-8',
-    target: '_blank',
-  },
-  {
-    title: 'Instragram',
-    href: 'https://www.instagram.com/wittemann/',
-    target: '_blank',
-  },
-  { title: 'Email', href: 'mailto:martin@wittemann-mail.de' },
-];
 
 export default function Bio({
   className,
@@ -41,8 +17,18 @@ export default function Bio({
         className="border-4 border-foreground grayscale mb-2"
       />
       <h3 className={`${fontHeadline.className}`}>Martin Wittemann</h3>
-      <p className="text-xs">{shortInfoText}</p>
-      <ul className="text-xs text-primary mt-2 hover:text-prim">
+      <p>
+        Senior Frontend Engineer at{' '}
+        <a
+          className="hover:underline-offset-4 underline"
+          href="https://www.mail-and-media.com/"
+          target="_blank"
+        >
+          1&1 MAIL & MEDIA
+        </a>
+      </p>
+
+      <ul className="mt-2 hover:text-prim">
         {links.map((data) => {
           return (
             <li key={data.title} className="list-inside list-disc">

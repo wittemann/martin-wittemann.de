@@ -1,0 +1,23 @@
+[
+  {
+    "title": "LinkedIn",
+    "href": "https://www.linkedin.com/in/martin-wittemann",
+    "target": "_blank"
+  },
+  {
+    "title": "Github",
+    "href": "https://github.com/wittemann",
+    "target": "_blank"
+  },
+  {
+    "title": "Pluralsight",
+    "href": "https://app.pluralsight.com/profile/martin-wittemann-8",
+    "target": "_blank"
+  },
+  {
+    "title": "Instragram",
+    "href": "https://www.instagram.com/wittemann/",
+    "target": "_blank"
+  },
+  { "title": "Email", "href": "mailto:martin@wittemann-mail.de" }
+]
