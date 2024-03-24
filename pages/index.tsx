@@ -1,11 +1,10 @@
-import About from '@/components/about';
 import Bio from '@/components/bio';
 import Experience from '@/components/experience';
-import Header from '@/components/header';
+import About from '@/components/about';
 import Projects from '@/components/projects';
 import { Sarabun } from 'next/font/google';
 
-const font = Sarabun({ subsets: ['latin'], weight: '100' });
+const font = Sarabun({ subsets: ['latin'], weight: ['100', '700'] });
 
 export default function Home() {
   return (
@@ -14,8 +13,6 @@ export default function Home() {
     >
       <Bio className="min-w-[230px] flex flex-col"></Bio>
       <main className="max-w-screen-xl">
-        <Header></Header>
-
         <About></About>
         <Experience></Experience>
         <Projects></Projects>
