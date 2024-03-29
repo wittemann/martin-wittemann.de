@@ -43,7 +43,7 @@
 }
 
 @layer components {
-  .eightBitBorder {
+  .eight-bit-border {
     box-shadow:
       6px 0 rgba(var(--color-primary), 0.3),
       0 -6px rgba(var(--color-primary), 0.3),

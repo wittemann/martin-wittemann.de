@@ -9,7 +9,7 @@ export default function Details() {
       {Object.keys(details).map((name, detailId) => (
         <div
           key={detailId}
-          className="grow p-2 bg-primary/10 min-w-56 basis-0 eightBitBorder"
+          className="grow p-2 bg-primary/10 min-w-56 basis-0 eight-bit-border"
         >
           <h2 className={`${fontHeadline.className} text-lg`}>{name}</h2>
           <ul className="list-disc list-inside pl-2">
