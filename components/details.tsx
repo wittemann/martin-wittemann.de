@@ -5,9 +5,12 @@ const fontHeadline = Silkscreen({ subsets: ['latin'], weight: '700' });
 
 export default function Details() {
   return (
-    <section className="flex gap-3 w-full mt-12 flex-wrap">
+    <section className="flex gap-5 w-full mt-12 flex-wrap">
       {Object.keys(details).map((name, detailId) => (
-        <div key={detailId} className="grow p-2 bg-primary/20 min-w-56 basis-0">
+        <div
+          key={detailId}
+          className="grow p-2 bg-primary/10 min-w-56 basis-0 eightBitBorder"
+        >
           <h2 className={`${fontHeadline.className} text-lg`}>{name}</h2>
           <ul className="list-disc list-inside pl-2">
             {details[name as keyof typeof details].map((detail, id) => (

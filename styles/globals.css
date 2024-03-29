@@ -41,3 +41,14 @@
     color: rgb(var(--link-color-hover));
   }
 }
+
+@layer components {
+  .eightBitBorder {
+    box-shadow:
+      6px 0 rgba(var(--color-primary), 0.3),
+      0 -6px rgba(var(--color-primary), 0.3),
+      -6px 0 rgba(var(--color-primary), 0.3),
+      0 6px rgba(var(--color-primary), 0.3);
+    margin: 6px auto;
+  }
+}
