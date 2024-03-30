@@ -11,14 +11,13 @@ const opacityValues = [
   'opacity-[0.10]',
 ];
 
-// TODO fix console error
-
 export default function PixelBackground() {
   return (
     <>
       <div className="absolute w-full top-0 z-[-2] flex flex-wrap">
         {[...Array(80)].map((e, i) => (
           <div
+            suppressHydrationWarning
             key={i}
             className={`w-[5%] dark:bg-[white] bg-[black] pt-[5%] ${opacityValues[Math.floor(Math.random() * opacityValues.length)]}`}
           ></div>
