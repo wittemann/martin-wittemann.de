@@ -1,7 +1,6 @@
 import Bio from '@/components/bio';
 import Experience from '@/components/experience';
 import About from '@/components/about';
-import Projects from '@/components/projects';
 import { Sarabun } from 'next/font/google';
 import Footer from '@/components/footer';
 import Details from '@/components/details';
@@ -20,7 +19,6 @@ export default function Home() {
         <main className="max-w-screen-xl">
           <About></About>
           <Experience></Experience>
-          <Projects></Projects>
           <Details></Details>
           <Footer></Footer>
         </main>
