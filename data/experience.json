@@ -3,8 +3,15 @@
     "title": "Senior Frontend Engineer",
     "company": "1&1 MAIL & MEDIA",
     "date": "March 2024 until now",
-    "description": "TBD",
-    "details": ["detail 1", "detail 2"],
+    "description": "Frontend Engineer and Application Architect taking care of the bigger frontend related challenges in the department of Web development.",
+    "details": [
+      "Rewrite of the falgship mailer application for more than 40 mio users as small micro frontends",
+      "Performance optimization",
+      "Design and implement cross cutting concerns for multiple teasms e.g. error reporting",
+      "Apply the architectural learings from the past to keep the overall architecture up to date",
+      "Educate and train other frontend developer",
+      "Hunting down bugs of customers"
+    ],
     "tags": ["TypeScript", "StencilJS", "Redux", "Architecture"]
   },
   "archive": [
@@ -20,33 +27,47 @@
       "title": "Head of Frontend Development",
       "company": "1&1 MAIL & MEDIA",
       "date": "May 2015 until July 2018",
-      "description": "TBD",
+      "description": "Leader of a frontend team developing an in house JavaScript framework based on Angular including staff responsibility of 5-6 frontend developer.",
       "details": [],
-      "tags": ["Leading", "TypeScript", "Angular"]
+      "tags": ["Leading", "TypeScript", "Angular", "Agile Processes"]
     },
     {
       "title": "Head of Frameworks & Tooling",
       "company": "1&1",
       "date": "May 2011 until Aprila 2015",
-      "description": "TBD",
+      "description": "Framework Architect and staff responsible for 4-6 Frontend developer fully responsible for the open source JavaScript framework qooxdoo and its development team.",
       "details": [],
-      "tags": ["Leading", "JavaScript", "OpenSource"]
+      "tags": [
+        "JavaScript",
+        "Open Source",
+        "qooxdoo",
+        "API design",
+        "Leading",
+        "Public Relations",
+        "Agile Processes"
+      ]
     },
     {
       "title": "Framework Architect",
       "company": "1&1",
       "date": "May 2011 until April 2011",
-      "description": "TBD",
+      "description": "Responsible for the technical part of the of the qooxdoo JavaScript framework development including long term technical decisions and API design.",
       "details": [],
-      "tags": ["TBD"]
+      "tags": [
+        "JavaScript",
+        "Open Source",
+        "qooxdoo",
+        "API design",
+        "Architecture"
+      ]
     },
     {
       "title": "Frontend Developer",
       "company": "1&1",
       "date": "April 2009 until April 2010",
-      "description": "TBD",
+      "description": "Frontend developer actively developing and maintaining the open source JavaScript framework qooxdoo.",
       "details": [],
-      "tags": ["TBD"]
+      "tags": ["JavaScript", "Open Source", "qooxdoo", "CSS", "HTML", "DOM"]
     }
   ]
 }
