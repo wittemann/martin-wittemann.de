@@ -2,7 +2,7 @@ import { Silkscreen } from 'next/font/google';
 
 const fontHeadline = Silkscreen({ subsets: ['latin'], weight: '700' });
 
-export default function About() {
+export default function Header() {
   return (
     <header>
       <p className="text-2xl">

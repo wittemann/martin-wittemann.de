@@ -1,28 +1,16 @@
-import Bio from '@/components/bio';
-import Experience from '@/components/experience';
-import About from '@/components/about';
+import Experience from '@/components/home/experience';
 import { Sarabun } from 'next/font/google';
-import Footer from '@/components/footer';
-import Details from '@/components/details';
-import PixelBackground from '@/components/background';
+import Details from '@/components/home/details';
+import Header from '@/components/home/header';
 
 const font = Sarabun({ subsets: ['latin'], weight: ['100', '700'] });
 
 export default function Home() {
   return (
     <>
-      <PixelBackground></PixelBackground>
-      <div
-        className={`${font.className} tracking-wider mx-16 flex mt-16 gap-10 flex-col lg:flex-row-reverse justify-center`}
-      >
-        <Bio className="min-w-[230px] flex flex-col"></Bio>
-        <main className="max-w-screen-xl">
-          <About></About>
-          <Experience></Experience>
-          <Details></Details>
-          <Footer></Footer>
-        </main>
-      </div>
+      <Header></Header>
+      <Experience></Experience>
+      <Details></Details>
     </>
   );
 }

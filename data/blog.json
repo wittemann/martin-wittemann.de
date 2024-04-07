@@ -1,0 +1,14 @@
+[
+  {
+    "id": "p1",
+    "title": "Post 1",
+    "paragraphs": ["p1", "p2"],
+    "tags": ["tag1", "tag2"]
+  },
+  {
+    "id": "p2",
+    "title": "Post 2",
+    "paragraphs": ["p1", "p2"],
+    "tags": ["tag1", "tag2"]
+  }
+]
