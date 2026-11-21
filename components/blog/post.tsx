@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export type PostType = {
   id: string;
   title: string;
@@ -8,7 +10,7 @@ export type PostType = {
 export default function Post({ data }: { data: PostType }) {
   return (
     <>
-      <a href="/blog">&lt; Back</a>
+      <Link href="/blog">&lt; Back</Link>
 
       <h1>{data.title}</h1>
       {data.paragraphs.map((p: string, index: number) => (

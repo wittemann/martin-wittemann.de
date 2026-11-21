@@ -1,6 +1,7 @@
 import Header from '@/components/blog/header';
 import Post, { PostType } from '@/components/blog/post';
 import blogData from '@/data/blog.json';
+import Link from 'next/link';
 
 export default function Blog() {
   return (
@@ -13,9 +14,9 @@ export default function Blog() {
           {blogData.map((post, index) => {
             if (index === 0) return;
             return (
-              <a key={post.id} href={`/blog/${post.id}`}>
-                <li>{post.title}</li>
-              </a>
+              <li key={post.id}>
+                <Link href={`/blog/${post.id}`}>{post.title}</Link>
+              </li>
             );
           })}
         </ul>

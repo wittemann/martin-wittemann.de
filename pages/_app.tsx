@@ -16,7 +16,7 @@ export default function App({ Component, pageProps }: AppProps) {
         className={`${font.className} tracking-wider mx-16 flex mt-16 gap-10 flex-col lg:flex-row-reverse justify-center`}
       >
         <Bio className="min-w-[230px] flex flex-col"></Bio>
-        <main className="max-w-screen-xl">
+        <main className="max-w-[1280px]">
           <Component {...pageProps} /> <Footer></Footer>
         </main>
       </div>

@@ -1,21 +1,55 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@theme {
+  /* Only the site's own colors, like the old Tailwind 3 config. */
+  --color-*: initial;
+  --color-primary: rgb(var(--primary-rgb));
+  --color-foreground: rgb(var(--text-rgb));
+
+  --animate-wave: wave 2.5s 0.6s infinite;
+
+  @keyframes wave {
+    from {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(16deg);
+    }
+    20% {
+      transform: rotate(-6deg);
+    }
+    30% {
+      transform: rotate(16deg);
+    }
+    40% {
+      transform: rotate(-4deg);
+    }
+    50% {
+      transform: rotate(16deg);
+    }
+    60% {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+}
 
 @layer base {
   :root {
-    --text-color: 22, 16, 26;
-    --background-color: 232, 232, 232;
-    --color-primary: 233, 7, 7;
-    --link-color-hover: 129, 103, 41;
+    --text-rgb: 22, 16, 26;
+    --background-rgb: 232, 232, 232;
+    --primary-rgb: 233, 7, 7;
+    --link-hover-rgb: 129, 103, 41;
   }
 
   @media (prefers-color-scheme: dark) {
     :root {
-      --text-color: 214, 213, 168;
-      --background-color: 27, 36, 48;
-      --color-primary: 129, 103, 151;
-      --link-color-hover: 115, 128, 245;
+      --text-rgb: 214, 213, 168;
+      --background-rgb: 27, 36, 48;
+      --primary-rgb: 129, 103, 151;
+      --link-hover-rgb: 115, 128, 245;
     }
   }
 
@@ -24,8 +58,8 @@
   }
 
   body {
-    color: rgb(var(--text-color));
-    background-color: rgb(var(--background-color));
+    color: rgb(var(--text-rgb));
+    background-color: rgb(var(--background-rgb));
     padding-bottom: 200px;
   }
 
@@ -34,21 +68,21 @@
   h3,
   h4,
   h5 {
-    color: rgb(var(--color-primary));
+    color: rgb(var(--primary-rgb));
   }
 
   a:hover {
-    color: rgb(var(--link-color-hover));
+    color: rgb(var(--link-hover-rgb));
   }
 }
 
 @layer components {
   .eight-bit-border {
     box-shadow:
-      6px 0 rgba(var(--color-primary), 0.3),
-      0 -6px rgba(var(--color-primary), 0.3),
-      -6px 0 rgba(var(--color-primary), 0.3),
-      0 6px rgba(var(--color-primary), 0.3);
+      6px 0 rgba(var(--primary-rgb), 0.3),
+      0 -6px rgba(var(--primary-rgb), 0.3),
+      -6px 0 rgba(var(--primary-rgb), 0.3),
+      0 6px rgba(var(--primary-rgb), 0.3);
     margin: 6px auto;
   }
 
@@ -57,7 +91,7 @@
       180deg,
       rgba(0, 0, 0, 0) 0%,
       rgba(0, 0, 0, 0) 60%,
-      rgba(var(--background-color), 1) 100%
+      rgba(var(--background-rgb), 1) 100%
     );
   }
 }
